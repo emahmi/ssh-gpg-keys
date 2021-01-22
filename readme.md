@@ -1,10 +1,21 @@
+## Steps to generate SSH Key
+1. `ssh-keygen -t rsa -b 4096 -C "someone@mail.com"`
+2. Specify the location to save (~/.ssh/id_rsa): _Press __Enter__ on this step if this where you want to save file_
+3. Enter passphrase
+4. eval $(ssh-agent -s)
+5. ssh-add ~/.ssh/id_rsa
+6. cat ~/.ssh/id_rsa.pub
+_Copy the contents of the file which displayed_
+7. Paste it into github account.
+
+
 ## Steps to generate GPG Key
 1. `gpg --full-generate-key`
-2. Select option (1) for RSA key and give keysize of 4096
-3. Select Press 0 for not to expire key ever
-Enter Real Name: OctaCat<br>
-Email Address: someone@mail.com<br>
-Comment: Github GPG Key<br>
+2. Select option (`1`) for RSA key and give keysize of 4096
+3. Select Press `0` for not to expire key ever
+_Enter Real Name:_ `OctaCat`
+_Email Address:_ `someone@mail.com`
+_Comment:_ `Github GPG Key`
 4. Enter passphrase
 5. `gpg --list-secret-keys --keyid-format LONG`<br>
 sec rsa4096/`3AA5C34371567BD2` 2021-01-22<br>
