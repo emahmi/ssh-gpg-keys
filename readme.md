@@ -1,10 +1,10 @@
 ## Steps to generate SSH Key
 1. `ssh-keygen -t rsa -b 4096 -C "someone@mail.com"`
-2. Specify the location to save (~/.ssh/id_rsa): _Press __Enter__ on this step if this where you want to save file_
+2. `Specify the location to save (~/.ssh/id_rsa):` _Press __Enter__ on this step if this where you want to save file_
 3. Enter passphrase
-4. eval $(ssh-agent -s)
-5. ssh-add ~/.ssh/id_rsa
-6. cat ~/.ssh/id_rsa.pub
+4. `eval $(ssh-agent -s)`
+5. `ssh-add ~/.ssh/id_rsa`
+6. `cat ~/.ssh/id_rsa.pub`
 _Copy the contents of the file which displayed_
 7. Paste it into github account.
 
