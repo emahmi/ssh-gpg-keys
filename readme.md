@@ -12,9 +12,9 @@ _Copy the contents of the file which displayed_
 ## Steps to generate GPG Key
 1. `gpg --full-generate-key`
 2. Select option (`1`) for RSA key and give keysize of 4096
-3. Select Press `0` for not to expire key ever
-_Enter Real Name:_ `OctaCat`
-_Email Address:_ `someone@mail.com`
+3. Select Press `0` for not to expire key ever<br>
+_Enter Real Name:_ `OctaCat`<br>
+_Email Address:_ `someone@mail.com`<br>
 _Comment:_ `Github GPG Key`
 4. Enter passphrase
 5. `gpg --list-secret-keys --keyid-format LONG`<br>
