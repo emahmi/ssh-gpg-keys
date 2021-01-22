@@ -11,9 +11,11 @@ sec rsa4096/`3AA5C34371567BD2` 2021-01-22<br>
 `3AA5C34371567BD2` is key<br>
 `gpg --armor --export 3AA5C34371567BD2`<br>
 Prints the GPG key, in ASCII armor format
-``` -----BEGIN PGP PUBLIC KEY BLOCK-----
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
------END PGP PUBLIC KEY BLOCK------ ```
-6. Paste GPG into Github account
+-----END PGP PUBLIC KEY BLOCK------
+```
+6. Copy and paste GPG into Github account including `BEGIN PGP` and `END PGP` line
 7. `git config --global user.signingkey 3AA5C34371567BD2`
 8. `git config commit.gpgsign true`
