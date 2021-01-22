@@ -4,7 +4,7 @@
 3. Enter passphrase
 4. `eval $(ssh-agent -s)`
 5. `ssh-add ~/.ssh/id_rsa`
-6. `cat ~/.ssh/id_rsa.pub`
+6. `cat ~/.ssh/id_rsa.pub`<br>
 _Copy the contents of the file which displayed_
 7. Paste it into github account.
 
